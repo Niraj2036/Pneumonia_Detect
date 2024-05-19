@@ -6,8 +6,8 @@ from PIL import Image
 image_classifier = pipeline("image-classification", model="nickmuchi/vit-finetuned-chest-xray-pneumonia")
 
 def main():
-    st.title("Image Classification App")
-    st.write("Upload an image and let the model classify it!")
+    st.title("Pneumonia X Ray Detection")
+    st.write("Upload an image of your chest X ray")
 
     # Allow user to upload an image
     uploaded_image = st.file_uploader("Choose an image...", type=["jpg", "jpeg", "png"])
